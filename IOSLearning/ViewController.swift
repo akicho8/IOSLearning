@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func myButtonAction(_ sender: Any) {
+        print("myButtonAction")
+        myLabelAction.text = "ok"
+    }
+
+    @IBOutlet weak var myLabelAction: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +26,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-
